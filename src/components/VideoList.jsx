@@ -5,7 +5,7 @@ var VideoList = (props) => (
   <div className="video-list">
     {console.log('this should be the array', props.videos)}
     {props.videos.map(video => {
-      return <VideoListEntry video={video} />;
+      return <VideoListEntry video={video} />;  //don't confuse these two very different "video" variables
     })}
   </div>
 );

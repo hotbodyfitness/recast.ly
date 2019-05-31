@@ -2,6 +2,10 @@ import VideoList from './VideoList.js';
 import VideoPlayer from './VideoPlayer.js';
 import exampleVideoData from '../data/exampleVideoData.js';
 
+
+
+//Zack's idea
+//on click variable changes the video input at 18
 var App = () => (
   <div>
     <nav className="navbar">
@@ -11,11 +15,11 @@ var App = () => (
     </nav>
     <div className="row">
       <div className="col-md-7">
-        <div><h5><em>videoPlayer</em><VideoPlayer /></h5></div>
+        <div><h5><em>videoPlayer</em><VideoPlayer video={exampleVideoData[0]} /></h5></div>
         
       </div>
       <div className="col-md-5" id="video">
-        <VideoList videos={exampleVideoData}/>
+        <VideoList videos={exampleVideoData} />
       </div>
     </div>
   </div>
