@@ -1,9 +1,18 @@
-import exampleVideoData from '../data/exampleVideoData.js';
+//import exampleVideoData from '../data/exampleVideoData.js';
 import VideoListEntry from './VideoListEntry.js';
+
+// var VideoList = (props) => (
+//   <div className="video-list">    
+//     {props.videos.map(video => {
+//       return <VideoListEntry video={video} />;
+//     })}
+//   </div>
+// );
+
 
 var VideoList = (props) => (
   <div className="video-list">
-    {console.log('this should be the array', props.videos)}
+    {console.log('this is the array', props.video)}
     {props.videos.map(video => {
       return <VideoListEntry video={video} />;  //don't confuse these two very different "video" variables
     })}

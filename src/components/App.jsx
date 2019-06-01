@@ -19,7 +19,7 @@ var App = () => (
         
       </div>
       <div className="col-md-5" id="video">
-        <VideoList videos={exampleVideoData} />
+        <VideoList videos = {exampleVideoData}/>
       </div>
     </div>
   </div>
@@ -28,7 +28,16 @@ var App = () => (
 // In the ES6 spec, files are "modules" and do not share a top-level scope
 // `var` declarations will only exist globally where explicitly defined
 export default App;
-ReactDOM.render(<App/>, document.getElementById('app'));
+
+
+
+
+
+
+
+
+
+
 //2 ways to only take in 5 videos
 //1.handle filtering in app (to only take in first 5 )
 //OR
