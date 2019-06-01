@@ -1,7 +1,7 @@
 import VideoList from './VideoList.js';
 import VideoPlayer from './VideoPlayer.js';
 import exampleVideoData from '../data/exampleVideoData.js';
-import YOUTUBE_API_KEY from '../config/youtube.js'
+import YOUTUBE_API_KEY from '../config/youtube.js';
 
 // var App = () => (
 //   <div>
