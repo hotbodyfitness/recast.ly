@@ -13,8 +13,8 @@ import VideoListEntry from './VideoListEntry.js';
 var VideoList = (props) => (
   <div className="video-list">
     {console.log('this is the array', props.video)}
-    {props.videos.map(video => {
-      return <VideoListEntry video={video} />;  //don't confuse these two very different "video" variables
+    {props.videos.map((video, i) => {
+      return <VideoListEntry click={props.click} index={i} video={video} />;  //don't confuse these two very different "video" variables
     })}
   </div>
 );
