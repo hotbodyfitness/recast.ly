@@ -14,7 +14,7 @@ var VideoList = (props) => (
   <div className="video-list">
     {console.log('this is the array', props.videos)}
     {props.videos.map((video, i) => {
-      return <VideoListEntry click={props.click} index={i} video={video} />;  //don't confuse these two very different "video" variables
+      return <VideoListEntry click={props.click} index={i} video={video} />; 
     })}
   </div>
 );
