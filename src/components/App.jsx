@@ -30,13 +30,14 @@ class App extends React.Component {
       currentVid: 0
     };
   }
-
-  clickHandler() {
+  //Josh's Notes: event.target 
+  clickHandler(event) {
     this.setState({
-      currentVid: id
+      currentVid: event.target.id
     });
   }
 
+    //Josh: change line 55 from exampleVideoData to this.state.
   render() {
     return (
       <div>
@@ -47,11 +48,11 @@ class App extends React.Component {
         </nav>
         <div className="row">
           <div className="col-md-7">
-            <div><h5><em>Player</em><VideoPlayer video={exampleVideoData[this.state.currentVid]} /></h5></div>
+            <div><h5><em>Player</em><VideoPlayer video={this.state.allVid[this.state.currentVid]} /></h5></div>
 
           </div>
           <div className="col-md-5" id="video">
-            <VideoList click={this.clickHandler.bind(this)} videos={exampleVideoData} />
+            <VideoList click={this.clickHandler.bind(this)} videos={this.state.allVid} />
           </div>
         </div>
       </div>
