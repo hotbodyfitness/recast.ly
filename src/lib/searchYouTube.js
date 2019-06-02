@@ -6,10 +6,11 @@ var searchYouTube = (options, callback) => {
     success: (data) => callback(data),
     data: {
       key: options.key,
-      part: snippet,
-      videoEmbeddable: true,
-      maxResults: options.max || 5,
-      q: options.query
+      part: 'snippet'
+      // videoEmbeddable: true,
+      // maxResults: options.max || 5,
+      // q: options.query,
+      // type: 'video'
     }
   });
 };
