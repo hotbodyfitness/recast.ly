@@ -12,7 +12,6 @@ import VideoListEntry from './VideoListEntry.js';
 //Josh: could we rename click on line 17 to clickHandler={props.clickHandler} on line 17 
 var VideoList = (props) => (
   <div className="video-list">
-    {console.log('this is the array', props.videos)}
     {props.videos.map((video, i) => {
       return <VideoListEntry click={props.click} index={i} video={video} />; 
     })}
