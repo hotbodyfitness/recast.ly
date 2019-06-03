@@ -5,14 +5,14 @@ var searchYouTube = (options, callback) => {
     method: 'GET',  
     
     data: {
-      part: 'snippet',
       key: options.key,
+      part: 'snippet',
       q: options.query,
       videoEmbeddable: 'true',
       type: 'video',
       maxResults: options.max
     },
-    success: data => callback(data.items)
+    success: (data) => callback(data.items)
   });
 };
 
